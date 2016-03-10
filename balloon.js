@@ -12,11 +12,14 @@ function eachColorBalloon(balloonOrder){
   			.split(" ");
 
   		var setOfBalloon = Number(item[0]);
-      
+      	
+      	var balloons = setOfBalloon*3;
+
   		var colour = item[1];
   	
   		balloonList.push({
   			setOfBalloon: setOfBalloon,
+  			balloons: balloons,
   			colour: colour
   			})
 		
