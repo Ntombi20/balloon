@@ -63,17 +63,17 @@ function eachBalloonPrice(balloonCost){
 }
 
 function newPrices(extraCost){
-	var price = priceForTheBalloon(extraCost);
+	//var price = priceForTheBalloon(extraCost);
 
-	var price1 = price.AllCost;
-	for (var i = 0; i < price.length; i++) {
-		var extra = price[i];
+	// var price1 = price.AllCost;
+	// for (var i = 0; i < price.length; i++) {
+	// 	var extra = price[i];
 
 
 
-	};
+	// };
 
-	return price;
+	// return price;
 }
 
 
