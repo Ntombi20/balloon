@@ -1,0 +1,104 @@
+function eachColorBalloon(balloonOrder){
+	var balloon = balloonOrder
+		.split(", ");
+
+	var balloonList	= [];
+	for (var i = 0; i < balloon.length; i++) {
+		var balloonString = balloon[i];
+
+  		var item = balloonString
+  			.replace("and ", "")
+  			.replace(" sets of", "")
+  			.split(" ");
+
+  		var setOfBalloon = Number(item[0]);
+      
+  		var colour = item[1];
+  	
+  		balloonList.push({
+  			setOfBalloon: setOfBalloon,
+  			colour: colour
+  			})
+		
+	};
+
+	return balloonList;	
+}
+
+function eachBalloonPrice(balloonCost){
+	var cost = balloonCost
+	  .replace("for red, ", "")
+	  .replace("for blue, ", "")
+	  .replace("for yellow", "")
+	  .replace(" and ", "")
+	  .replace(" ", "")
+	  .split();
+
+	var costList = [];
+	for (var i = 0; i < cost.length; i++) {
+
+		var costString = cost[i];
+
+  		var prices = costString
+  			.split("R").join(" ").split(" ").slice(" ");
+  			
+  		 console.log(prices);
+
+  		var cost1 = Number(prices[1]); 
+  		var cost2 = Number(prices[2]);
+  		var cost3 = Number(prices[3]);
+
+  		var AllCost = cost1 + cost2 + cost3;
+  		costList.push(
+  			AllCost
+  			);
+		
+	};
+	
+
+	return costList;
+}
+
+function newPrices(extraCost){
+	var price = priceForTheBalloon(extraCost);
+
+	var price1 = price.AllCost;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function findColdestPlace(weatherString){
+    var places = findPlaces(weatherString);
+
+    var coldestTemp = places[0].temperature;
+    var coldestPlace = "";
+
+    for(var i=0; i<places.length;i++){
+        var place = places[i];
+        if (place.temperature < coldestTemp ){
+            coldestTemp = place.temperature;
+            coldestPlace = place.place;
+        }
+    }
+    return coldestPlace;
+}
