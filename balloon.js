@@ -48,7 +48,7 @@ function eachBalloonPrice(balloonCost){
   		var cost2 = Number(prices[2]);
   		var cost3 = Number(prices[3]);
 
-  		var AllCost = cost1 + cost2 + cost3;
+  		var AllCost = (cost1 * 3) + (cost2 * 3) + (cost3 * 3);
   		costList.push(
   			AllCost
   			);

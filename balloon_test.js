@@ -23,7 +23,7 @@ QUnit.test( "fine how much do all the balloons cost?", function( assert ) {
 
   var balloonCost = eachBalloonPrice("R4 for red, R5 for blue, and R5.50 for yellow");
   
-  assert.equal(balloonCost, 14.50);
+  assert.equal(balloonCost, 43.50);
 })
 
 QUnit.test( "find is it costs R2.00 to inflate each balloon with helium, how much extra would that cost?", function( assert ) {
