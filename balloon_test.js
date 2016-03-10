@@ -33,5 +33,5 @@ QUnit.test( "find is it costs R2.00 to inflate each balloon with helium, how muc
 
   var extraCost = newPrices("R4 for red, R5 for blue, and R5.50 for yellow");
 
-  assert.equal(extraCost, 20.60);
+  assert.equal(extraCost, 63.50);
 })

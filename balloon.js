@@ -66,6 +66,14 @@ function newPrices(extraCost){
 	var price = priceForTheBalloon(extraCost);
 
 	var price1 = price.AllCost;
+	for (var i = 0; i < price.length; i++) {
+		var extra = price[i];
+
+
+
+	};
+
+	return price;
 }
 
 
